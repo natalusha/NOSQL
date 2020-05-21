@@ -17,7 +17,7 @@
 
         public function create($workValues, $authorValues, $genreValues, $countryValues)
         {
-            if($db = 'mongo') {
+            if($db == 'mongo') {
                 $this->worksCollection->insertOne(['name' => 'Test', 'age' => 12]);
             }
             else {
@@ -35,7 +35,7 @@
 
         public function update()
         {
-            if($db = 'mongo') {
+            if($db == 'mongo') {
                 $this->worksCollection->updateMany(['name' => 'Test', 'age' => 12], ['$set'=> ['name' => 'Updated', 'age' => 13, 'makitra' => 1]]); 
             }
             else {
@@ -55,7 +55,7 @@
 
         public function getOne()
         {
-            if($db = 'mongo') {
+            if($db == 'mongo') {
                 return $this->worksCollection->findOne(['name' => 'Test', 'age' => 12]);
             }
             else {
@@ -65,7 +65,7 @@
 
         public function getAllByKeys()
         {
-            if($db = 'mongo') {
+            if($db == 'mongo') {
                 return $this->worksCollection->find(['name' => 'Test', 'age' => 12]);
             }
             else {
@@ -75,7 +75,7 @@
 
         public function getAll()
         {
-            if($db = 'mongo') {
+            if($db == 'mongo') {
                 return $this->worksCollection->find();
             }
             else {
