@@ -1,4 +1,7 @@
 # NOSQL 7-8 ПЗ
+Тема: лит произведения
+схема БД:
+https://drive.google.com/open?id=17PL3Qx3JlHU2X-QdaeYaIGadN78xdB7D
 
 На стороне клиента **всегда** присутсвует выпадающий список для выбора БД с которой нужно работать.
 ![enter image description here](https://raw.githubusercontent.com/natalusha/NOSQL/master/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA.PNG)
@@ -63,3 +66,4 @@
 
 	}
 Файл: Model.php
+
